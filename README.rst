@@ -22,12 +22,11 @@ Usage (Configure settings.py:)
    ELASTICSEARCH_SERVERS = ['localhost']
    ELASTICSEARCH_INDEX = 'scrapy'
    ELASTICSEARCH_INDEX_DATE_FORMAT = '%Y-%m'
-   ELASTICSEARCH_TYPE = 'items'
    
    # can also accept a reference to a scrapy model field
    ELASTICSEARCH_TYPE = '%field1%'
    
-   ELASTICSEARCH_UNIQ_KEY = 'url'  # Custom uniqe key
+   ELASTICSEARCH_UNIQ_KEY = 'url'  # Custom unique key
 
    # can also accept a list of fields if need a composite key
    ELASTICSEARCH_UNIQ_KEY = 'url id'
